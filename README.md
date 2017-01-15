@@ -19,14 +19,14 @@ make 32bit
 Command Line Args
 -----------------
 
-  ./alloc_mem [-b] [-r] [-s] [-l] [-v] [size] [bsize]
-         -b allocate in blocks (default std=1meg, shm=10meg)
-         -r Release memory after it has been allocated
-         -s Allocate using shared memory
-         -l Lock pages in memory  (need root or MLOCK privs)
-         -v Verbose
-         size = Allocate specified in megs (default 10 megs)
-        bsize = Specify block size (requires -b option)
+        ./alloc_mem [-b] [-r] [-s] [-l] [-v] [size] [bsize]
+                 -b allocate in blocks (default std=1meg, shm=10meg)
+                 -r Release memory after it has been allocated
+                 -s Allocate using shared memory
+                 -l Lock pages in memory  (need root or MLOCK privs)
+                 -v Verbose
+                 size = Allocate specified in megs (default 10 megs)
+                bsize = Specify block size (requires -b option)
 
 
         Example : ./alloc_mem -b 200 10       (Allocate 200 megs memory in 10 meg chunks)
